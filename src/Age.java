@@ -12,26 +12,30 @@ public class Age {
         int familyCount = ageArray.length;
 
         double sum = 0.0;
+        int youngest = ageArray[0];
+        int oldest = ageArray[0];
+
+
         for (int i = 0; i < familyCount; i++) {
             System.out.println(ageArray[i]);
             sum += ageArray[i];
-        }
 
-        double average = sum / familyCount;
-
-        int youngest = ageArray[0];
-        for (int i = 0; i < familyCount; i++) {
             if (ageArray[i] < youngest) {
-                youngest = ageArray[i];
-            }
-        }
+                youngest = ageArray[i];}
 
-        int oldest = ageArray[0];
-        for (int i = 0; i < familyCount; i++) {
             if (ageArray[i] > oldest) {
                 oldest = ageArray[i];
             }
         }
+
+        double average = sum / familyCount;
+
+       /* for (int i = 0; i < familyCount; i++) {
+            }
+        }
+
+        for (int i = 0; i < familyCount; i++) {
+        }*/
         System.out.println("Average = " + average);
         System.out.println("Youngest = " + youngest);
         System.out.println("Oldest = " + oldest);
