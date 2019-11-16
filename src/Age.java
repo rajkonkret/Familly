@@ -35,6 +35,5 @@ public class Age {
         System.out.println("Average = " + average);
         System.out.println("Youngest = " + youngest);
         System.out.println("Oldest = " + oldest);
-
     }
 }
