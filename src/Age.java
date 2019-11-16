@@ -1,15 +1,11 @@
-import java.util.Collections;
 
 public class Age {
     public static void main(String[] args) {
-        int shesAge = 28;
         //declaration
-        int[] ageArray;
+
         //initialization
-        ageArray = new int[3];// dwa elementy w tablicy
-        ageArray[0] = 28;
-        ageArray[1] = 29;
-        ageArray[2] = 1;
+        int[] ageArray = {28,29,1};
+
         int familyCount = ageArray.length;
 
         //calculation
@@ -18,26 +14,16 @@ public class Age {
         int oldest = ageArray[0];
 
 
-        for (int i = 0; i < familyCount; i++) {
-            System.out.println(ageArray[i]);
-            sum += ageArray[i];
-
-            /*if (ageArray[i] < youngest) {
-                youngest = ageArray[i];}*/
-            youngest = Math.min(youngest, ageArray[i]);
-            if (ageArray[i] > oldest) {
-                oldest = ageArray[i];
+        for (int age : ageArray) {
+            sum += age;
+            youngest = Math.min(youngest, age);
+            if (age > oldest) {
+                oldest = age;
             }
         }
 
         double average = sum / familyCount;
 
-       /* for (int i = 0; i < familyCount; i++) {
-            }
-        }
-
-        for (int i = 0; i < familyCount; i++) {
-        }*/
         System.out.println("Average = " + average);
         System.out.println("Youngest = " + youngest);
         System.out.println("Oldest = " + oldest);
