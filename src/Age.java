@@ -7,11 +7,15 @@ public class Age {
         ageArray = new int[2];// dwa elementy w tablicy
         ageArray[0] = 28;
         ageArray[1] = 29;
+        int familyCount = ageArray.length;
 
-        for (int i = 0; i < ageArray.length; i++) {
+        double sum = 0.0;
+        for (int i = 0; i < familyCount; i++) {
             System.out.println(ageArray[i]);
+            sum += ageArray[i];
         }
-
+        double average = sum / familyCount;
+        System.out.println("Average = " + average);
 
     }
 }
