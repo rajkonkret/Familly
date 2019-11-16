@@ -6,9 +6,10 @@ public class Age {
         //declaration
         int[] ageArray;
         //initialization
-        ageArray = new int[2];// dwa elementy w tablicy
+        ageArray = new int[3];// dwa elementy w tablicy
         ageArray[0] = 28;
         ageArray[1] = 29;
+        ageArray[2] = 1;
         int familyCount = ageArray.length;
 
         double sum = 0.0;
