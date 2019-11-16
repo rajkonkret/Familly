@@ -20,9 +20,9 @@ public class Age {
             System.out.println(ageArray[i]);
             sum += ageArray[i];
 
-            if (ageArray[i] < youngest) {
-                youngest = ageArray[i];}
-
+            /*if (ageArray[i] < youngest) {
+                youngest = ageArray[i];}*/
+            youngest = Math.min(youngest, ageArray[i]);
             if (ageArray[i] > oldest) {
                 oldest = ageArray[i];
             }
