@@ -12,6 +12,7 @@ public class Age {
         ageArray[2] = 1;
         int familyCount = ageArray.length;
 
+        //calculation
         double sum = 0.0;
         int youngest = ageArray[0];
         int oldest = ageArray[0];
